@@ -1,6 +1,6 @@
 ## Spring_Boot_Final_Project
 
-                                                                # Tourism And Travel Project 
+# Tourism And Travel Project 
 
 #### A tourism and travel project based on Spring Boot would be a web application that aims to facilitate travel planning and booking tours. Spring Boot is a popular Java framework for building scalable and efficient web applications, making it a suitable choice for such a project. 
 
