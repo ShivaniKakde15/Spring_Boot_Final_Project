@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism and Travel</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="Resources/CSS/services.css" th:href="@{/CSS/services.css}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="Resources/images/logo.png" th:src="@{/images/logo.png}">
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/booklogin">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="signup">
+        <a href="/signup">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- services -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="services-txt">
+        <h1>SERVICES</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Affordable Hotel</h3>
+                <p>The hotels contribute a major share of imparting the experience to the tourists by providing best services and amenities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Food & Drinks</h3>
+                <p>Fine Dining Restaurants. Luxury restaurants are food and beverage establishments where special meals are served with special presentations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-bullhorn"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Safty Guide</h3>
+                <p>Please keep your seatbelts fastened at all times. Please stay with your group at all times. 
+                  These rules are for your own comfort and safety.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Around The World</h3>
+                <p>Around-the-world trip can be an incredible adventure, providing you with unforgettable 
+                  experiences and a diverse range of cultural encounters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-plane"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Fastest Travel</h3>
+                <p>When booking air travel, try to find direct flights to your destination. Non-stop flights
+                   are typically faster since you won't have to deal with connecting flights.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hiking"></i>
+            <div class="card">
+              <div class="card-body">
+                <h3 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Adventures</h3>
+                <p>Some of the adventure tourism activities involve day hiking, backpacking, zip lining, free fall, rafting, mountain biking, skiing and snowboarding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div class="footer">
+    <ul class="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/booklogin">Book</a></li>
+      <li><a href="/packages">Packages</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+    <div class="social">
+      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="copyright">
+      Copyright @ 2023
+    </p>
+  </div>
+
+  <script src="Resources/Js/services.js" th:src="@{/Js/services.js}"></script>
+</body>
+
+</html>
