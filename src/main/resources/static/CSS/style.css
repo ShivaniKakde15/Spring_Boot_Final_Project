@@ -52,7 +52,6 @@ body {
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
 }
 
 .home .content {
@@ -134,7 +133,6 @@ body {
 
 .container {
     max-width: 950px;
-    /* background: red; */
     width: 100%;
     overflow: hidden;
     padding: 80px 0;
@@ -163,11 +161,9 @@ body {
 
 .container .main-card {
     width: 200%;
-    /* background: grey; */
     display: flex;
     justify-content: space-evenly;
     transition: all 1s ease;
-    /* transition: all 1s ease-in-out; */
 }
 
 #two:checked~.main-card {
@@ -265,9 +261,6 @@ body {
 }
 
 input[type="radio"] {
-    /* position: relative;
-    bottom: -335px;
-    left: 50%; */
     display: none;
 }
 
@@ -336,3 +329,4 @@ input[type="radio"] {
     margin-left: 0px;
     font-family: Arial;
 }
+
