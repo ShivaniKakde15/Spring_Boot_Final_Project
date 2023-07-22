@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 
 import com.example.final_project.Model.BookUser;
-// import com.example.final_project.Model.LoginUser;
 import com.example.final_project.Model.User;
 import com.example.final_project.Service.bookService;
 import com.example.final_project.Service.finalprojectService;
@@ -23,10 +22,7 @@ public class finalprojectController {
     @Autowired
     finalprojectService finaldemo;
 
-    // @Autowired // (properly injected into the controller.)
-    // loginService logindemo;
-
-    @Autowired
+    @Autowired    //(properly injected into the controller.)
     bookService bookdemo;
 
     @GetMapping("/")
@@ -67,15 +63,12 @@ public class finalprojectController {
 
     @GetMapping("/signup")
     public String signuppage(@ModelAttribute User user, Model model) {
-        // model.addAttribute("registerRequest", new User());
         model.addAttribute("registerRequest", user);
         return "Signup";
     }
 
     @PostMapping("/signup")
     public String signupFrom(@ModelAttribute User user) {
-        // finaldemo.Add(use);
-        // return "redirect:/book";
         System.out.println("register requ:" + user);
         User registeredUser = finaldemo.signUser(user.getUsername(), user.getEmail(), user.getPassword());
         return registeredUser == null ? "error_page" : "redirect:/login";
