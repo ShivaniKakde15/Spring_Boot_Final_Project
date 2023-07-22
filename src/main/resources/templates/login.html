@@ -51,7 +51,6 @@
   <!-- login -->
   <div class="wrapper">
     <h1>Login</h1>
-    <!-- <form action="#" th:action="@{/login}" method="post"> -->
     <form id="loginForm" action="/login" th:object="${loginRequest}" method="post">
       <input type="text" name="username" placeholder="Username" required>
       <input type="password" name="password" placeholder="password" required>
