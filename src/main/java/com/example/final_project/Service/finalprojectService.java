@@ -1,6 +1,5 @@
 package com.example.final_project.Service;
 
-// import java.util.List;
 
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,9 +13,6 @@ public class finalprojectService {
     // @Autowired
     //  finalprojectRepo repo; 
     
-    // public void Add(User use){
-    //     repo.save(use);
-    // }
 
     private final finalprojectRepo repo;
     public finalprojectService(finalprojectRepo repo){
@@ -48,7 +44,7 @@ public User authenticate(String username, String password){
 
 
 
-//for testing
+// for testing
     // public List<User> getting(){
     //     return repo.findAll();
     // }

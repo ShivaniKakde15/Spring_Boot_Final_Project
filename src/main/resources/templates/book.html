@@ -61,12 +61,12 @@
         </div>
 
         <div class="col-md-6 py-3 py-md-0">
-          <form action="#" th:action="@{/book}" method="post">
-            <input onclick="myFunction()" type="text" name="whereto" class="form-control" placeholder="Where To" required><br>
-            <input type="number" name="numberofguests" class="form-control" placeholder="Number Of Guests" required><br>
-            <input id="disable" type="date" name="arrivedate" class="form-control" placeholder="Arrivals" required><br>
-            <input type="date" name="leavedate" class="form-control" placeholder="Leaving" required><br>
-            <textarea rows="5" type="text" name="details" class="form-control" placeholder="Enter Your Name & Details" required></textarea>
+          <form id="book-form" action="#" th:action="@{/book}" method="post">
+            <input id="whereto" onclick="myFunction()" type="text" name="whereto" class="form-control" placeholder="Where To" required><br>
+            <input id="numberofguests" type="number" name="numberofguests" class="form-control" placeholder="Number Of Guests" required><br>
+            <input  id="disable" type="date" name="arrivedate" class="form-control" placeholder="Arrivals" required><br>
+            <input id="leavedate" type="date" name="leavedate" class="form-control" placeholder="Leaving" required><br>
+            <textarea id="details" rows="5" type="text" name="details" class="form-control" placeholder="Enter Your Name & Details" required></textarea>
             <input type="submit" value="Book Now" class="submit">
 
           </form>

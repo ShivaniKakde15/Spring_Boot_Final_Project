@@ -69,7 +69,7 @@ public class User {
     return Objects.hash(id, username, password);
    }
 
-  // for testing
-   // public User(String string, int i, String string2) {
-    // }
+//   for testing
+//    public User(String string, int i, String string2) {
+//     }
 }
