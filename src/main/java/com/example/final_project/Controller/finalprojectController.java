@@ -8,13 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-
 import com.example.final_project.Model.BookUser;
 import com.example.final_project.Model.User;
 import com.example.final_project.Service.bookService;
 import com.example.final_project.Service.finalprojectService;
-
-
 
 @Controller
 public class finalprojectController {
@@ -22,7 +19,7 @@ public class finalprojectController {
     @Autowired
     finalprojectService finaldemo;
 
-    @Autowired    //(properly injected into the controller.)
+    @Autowired // (properly injected into the controller.)
     bookService bookdemo;
 
     @GetMapping("/")
@@ -42,6 +39,7 @@ public class finalprojectController {
 
     @PostMapping("/book")
     public String bookForm(@ModelAttribute BookUser bookuser) {
+        System.out.println("ddtails=" + bookuser.toString()); // booking value dispay in terminal
         bookdemo.BookSaveInfo(bookuser);
         return "redirect:/";
     }
