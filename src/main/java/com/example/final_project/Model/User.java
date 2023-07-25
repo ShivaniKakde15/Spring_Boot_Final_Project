@@ -56,6 +56,7 @@ public class User {
         return "User [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password  + "]";
     }
 
+    // equals() method to check if two User objects are equal
    @Override
    public boolean equals(Object o){
     if (this == o) return true;
