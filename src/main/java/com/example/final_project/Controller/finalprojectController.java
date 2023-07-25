@@ -59,30 +59,35 @@ public class finalprojectController {
         return "services";
     }
 
+
+    // for Signup Page 
     @GetMapping("/signup")
     public String signuppage(@ModelAttribute User user, Model model) {
         model.addAttribute("registerRequest", user);
         return "Signup";
     }
 
+    // for Submitting Signup Form 
     @PostMapping("/signup")
     public String signupFrom(@ModelAttribute User user) {
-        System.out.println("register requ:" + user);
+        System.out.println("register requ:" + user);   //check the values of the User
         User registeredUser = finaldemo.signUser(user.getUsername(), user.getEmail(), user.getPassword());
         return registeredUser == null ? "error_page" : "redirect:/login";
 
     }
 
+    // for Login Page
     @GetMapping("/login")
     public String loginPage(@ModelAttribute User user, Model model) {
         model.addAttribute("loginRequest", user);
         return "login";
     }
 
+    //for Submitting Login Form 
     @PostMapping("/login")
     public String loginForm(@ModelAttribute User user, Model model) {
         System.out.println("login requ:" + user);
-        User authenticated = finaldemo.authenticate(user.getUsername(), user.getPassword());
+        User authenticated = finaldemo.authenticate(user.getUsername(), user.getPassword());    //authenticate=>to comfirm the identity of someone
         if (authenticated != null) {
             model.addAttribute("userLogin", authenticated.getUsername());
             return "book";
