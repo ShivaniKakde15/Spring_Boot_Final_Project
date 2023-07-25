@@ -37,7 +37,7 @@ public User signUser(String username, String email, String password){
    }
 }
 
-
+// checking if a user with the provided username and password exists in the repository.
 public User authenticate(String username, String password){
     return repo.findByUsernameAndPassword(username, password).orElse(null);
 }
