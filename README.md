@@ -20,7 +20,7 @@
 #### The tourism and travel website provides information about popular tourist destinations and services, and allows users to book packages. Here's a description of the main pages of the tourism web application:
 
  * Home: The Home page serves as the landing page of the website.
- * About Us: Offering personalized itineraries and budget-friendly offbeat holidays in India and neighboring countries.
+ * About us: Tours and Travel is your go-to source for tour information, offering flawless itineraries and facilities for unforgettable offbeat holidays in India and its neighboring countries, all at an affordable price.
  * Services: Offering budget-friendly hotels, fine dining, thrilling adventures, safety guides, and expedited travel options worldwide.
  * Signup: Enables users to register, login, and book their tour. 
  * Package: Displays the packages.
